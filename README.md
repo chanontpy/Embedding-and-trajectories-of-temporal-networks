@@ -10,7 +10,7 @@ This repository provides the codes for the article [Embedding and trajectories o
 - `import matplotlib.pyplot as plt`
 
 ## Functions
-- `Adjacency`: to create an adjacency matrix at each time step, where at least one event occurs between a pair of nodes.
+- `Adjacency`: to create an adjacency matrix at each time step, where at least one event occurs between a pair of nodes. The input is a list of time-stamped contact events.
 - `ComputeBk`: use the tie-decay matrix at from the previous time step to compute the tie-decay matrix of the current time step.
 - `Tie_decay_matrices`: by using `ComputeBk`, this function computes tie-decay matrices of multiple time steps. Note that the index starts at $1$.
 - `Find_eigenpair`: compute eigenvalues and eigenvectors of a matrix.
