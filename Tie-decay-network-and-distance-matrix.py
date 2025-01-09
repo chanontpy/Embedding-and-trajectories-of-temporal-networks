@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
-
 import pandas as pd
 import numpy as np
 import numpy.linalg as LA
@@ -141,10 +135,3 @@ def Squared_Laplacian_distance_matrix(B): # B = Tie_decay_matrices(alpha, C)
                 continue
             
     return LD
-
-
-# In[ ]:
-
-
-
-
