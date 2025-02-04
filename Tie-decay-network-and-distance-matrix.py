@@ -226,3 +226,22 @@ def LMDS(t):
     vec = sq_vec - delta_mu
     embed_coord =  -0.5*np.matmul(L_prime,vec)
     return embed_coord
+
+#----Utilizing the tie-decay property-----#
+
+def determine_interval(t,T): # T is the list of time steps
+    for i in range(0,len(T)-1):
+        if t >= T[i] and t < T[i+1]:
+            num_i = i
+            return num_i
+        if t >= T[len(T)-1]:
+            num_i = len(T)-1
+            return num_i
+        
+def convenient_sq_laplacian_distance(t,tl,T,P,alpha): #T is the list of time steps, P is the list containing lists of eigenvalues of landmarks.
+    num_i = determine_interval(t,T)
+    num_landmark = determine_interval(tl,T)
+    c = np.exp(alpha *(T[num_i]-t))
+    current_laplacian_eigenvalues = c*np.array(P[num_i])
+    landmark_laplacian_eigenvalues = np.array(P[num_landmark])
+    return LA.norm(current_laplacian_eigenvalues - landmark_laplacian_eigenvalues)**2
