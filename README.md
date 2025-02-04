@@ -22,3 +22,12 @@ This repository provides the codes for the article [Embedding and trajectories o
 - `Find_eigenpair`: compute eigenvalues and their corresponding eigenvectors.
 - `Squared_Laplacian_distance`: compute the squared Laplacian distance between two matrices.
 - `Squared_Laplacian_distance_matrix`: construct the squared Laplacian distance matrix.
+- `Centered_Distance_matrix`: double mean centering a squared distance matrix.
+- `aux_delta`: compute egenvalues and eigenvectors of each landmark.
+- `Classical_MDS`: classical multidimensional scaling
+- `Col_sum`: finding the vector obtained from averaging the columns of a matrix.
+- `squared_dist_vector`: compute a vector encoding a squared distance between a tie-decay matrix and a landmark.
+- `LMDS`: compute LMDS.
+  ### One may use the following functions to aid the computation of LMDS with the tie-decay property
+- `determine_interval`: finding the subinterval in which a particular time step lies in.
+- `convenient_sq_laplacian_distance`: combinging tie-decay property with LMDS computation.
