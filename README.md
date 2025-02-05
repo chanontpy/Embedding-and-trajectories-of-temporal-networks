@@ -1,13 +1,19 @@
 # Embedding-and-trajectories-of-temporal-networks
 
-This repository provides the codes for the article [Embedding and trajectories of temporal networks](http://doi.org/10.1109/ACCESS.2023.3268030)
+This repository provides the codes for\
+[Chanon Thongprayoon, Lorenzo Livi, Naoki Masuda.\
+Embedding and trajectories of temporal networks.\
+IEEE Access, 11, 41426-41443 (2023)](http://doi.org/10.1109/ACCESS.2023.3268030).
 
-## Python packages
-- `import pandas as pd`
-- `import numpy as np`
-- `import numpy.linalg as LA`
-- `import math`
-- `import matplotlib.pyplot as plt`
+## Python package dependencies
+Run
+```R
+`import pandas as pd`
+`import numpy as np`
+`import numpy.linalg as LA`
+`import math`
+`import matplotlib.pyplot as plt`
+```
 
 ## Functions
 - `Adjacency`: to create an adjacency matrix at each time step, where at least one event occurs between a pair of nodes. The input is a list of time-stamped contact events.
